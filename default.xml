@@ -24,7 +24,7 @@
 
 
   <!-- BEGIN SUDAMOD --> 
-  <project path="build/make"  remote="suda" revision="sm-4.0" name="SudaMod/android_build" groups="pdk" >
+  <project path="build/make" remote="suda" revision="sm-4.0" name="SudaMod/android_build" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -35,7 +35,7 @@
   </project>
 
 
-  <project path="build/soong" name="SudaMod/android_build_soong" revision="sm-4.0" groups="pdk,tradefed" >
+  <project path="build/soong" remote="suda" name="SudaMod/android_build_soong" revision="sm-4.0" groups="pdk,tradefed" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
